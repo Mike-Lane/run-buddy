@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +12,9 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #39a6b2;
+    color: var(--tertiary-color);
 }
 
-
-::root {
-    --primary-color: var(--primary-color);
-    --secondary-color: #var(--secondary-color);
-    --tertiary-color: #39a6b2;
-}
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
@@ -35,14 +35,14 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(var(--primary-color););
+    color: var(--primary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
  }
 header a {
     text-decoration: none;
-    color: var(var(--primary-color););
+    color: var(--primary-color);
 }
 
 header nav {
@@ -65,14 +65,14 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(var(--primary-color););
+    background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
 
 footer{
-    background: var(var(--primary-color););
+    background: var(--primary-color);
     width: 100%;
     padding:40px 35px;
     display: flex;
@@ -221,7 +221,7 @@ section {
 }
 .hero-form button {
     color: var(--primary-color);
-    background-color: #var(--secondary-color);
+    background-color: var(--secondary-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -262,7 +262,7 @@ section {
     border-color: var(--primary-color);
 }
 .secondary-border {
-    border-color: #39a6b2;
+    border-color: var(--tertiary-color);
 }
 
 .step {
@@ -276,7 +276,7 @@ section {
 }
 
 .step:not(:last-child) {
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
 }
 .step h3 {
     color: var(--secondary-color);
@@ -345,14 +345,7 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
-.section-title {
-    font-size: 55px;
-    display: inline-block;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    margin-bottom: 35px;
-    color: var(--secondary-color);
-}
+
 .contact {
     background: var(--secondary-color);
 }
